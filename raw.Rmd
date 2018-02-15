@@ -1,0 +1,36 @@
+---
+title: "Developing Data Products - Week 3"
+author: "jverce"
+date: '2018-02-15'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Intro
+
+Welcome to this silly presentation
+```{r library, echo=FALSE, results='hide'}
+library(plotly)
+```
+
+## White Gaussian Noise
+
+This is what WGN looks like
+
+```{r plot}
+n <- 100
+noise <- (
+  (rnorm(n * n) > 0) %>%
+  as.numeric() %>%
+  matrix(nrow = n, ncol = n)
+)
+plot_ly(z = noise, type = "heatmap", colors = c("black", "white"))
+```
+
+## End
+
+Thank you!
+
