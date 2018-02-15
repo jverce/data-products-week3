@@ -1,5 +1,5 @@
 ---
-title: "Developing Data Products - Week 3"
+title: "Developing Data Products (Week 3)"
 author: "jverce"
 date: '2018-02-15'
 output: ioslides_presentation
@@ -7,14 +7,12 @@ output: ioslides_presentation
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
 ```
 
 ## Intro
 
 Welcome to this silly presentation
-```{r library, echo=FALSE, results='hide'}
-library(plotly)
-```
 
 ## White Gaussian Noise
 
